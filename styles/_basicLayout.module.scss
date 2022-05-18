@@ -3,6 +3,17 @@
   min-height: 100vh;
 
   :global {
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #000;
+      font-size: 16px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
     .MuiGrid-root {
       flex-direction: row-reverse;
     }

@@ -11,12 +11,14 @@ export default function Header() {
         <Link href="/">
           <h1 className="primary-font">MetaWall</h1>
         </Link>
-        <div className="profile">
-          <Avatar size={30} />
-          <Box sx={{ ml: 1, borderBottom: 2 }}>
-            <p className="primary-font">Member</p>
-          </Box>
-        </div>
+        <Link href="/member">
+          <div className="profile">
+            <Avatar size={30} />
+            <Box sx={{ ml: 1, borderBottom: 2 }}>
+              <p className="primary-font">Member</p>
+            </Box>
+          </div>
+        </Link>
       </GlobalContainer>
     </Box >
   )
