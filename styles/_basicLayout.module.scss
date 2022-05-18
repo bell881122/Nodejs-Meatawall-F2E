@@ -1,0 +1,10 @@
+.basicLayout {
+  background-color: #e7e0d4;
+  min-height: 100vh;
+
+  :global {
+    .MuiGrid-root {
+      flex-direction: row-reverse;
+    }
+  }
+}
