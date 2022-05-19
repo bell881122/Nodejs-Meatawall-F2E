@@ -14,8 +14,20 @@
       }
     }
 
-    .MuiGrid-root {
-      flex-direction: row-reverse;
+    .main-section {
+      .MuiGrid-root {
+        flex-direction: row-reverse;
+      }
+    }
+
+    .logo-word {
+      font-size: 36px;
+      color: #03438D;
+      margin-bottom: -4px;
+
+      @media (max-width:350px) {
+        font-size: 26px;
+      }
     }
   }
 }
