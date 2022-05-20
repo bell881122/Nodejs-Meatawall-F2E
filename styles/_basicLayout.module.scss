@@ -14,9 +14,39 @@
       }
     }
 
+    select {
+      display: block;
+      appearance: 'none';
+      font-size: 18px;
+      border: none;
+      outline: none;
+      height: 50px;
+      width: 100%;
+      position: relative;
+
+      &:focus {
+        border: none;
+        outline: none;
+      }
+
+      option {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 99;
+      }
+    }
+
     .main-section {
       .MuiGrid-root {
         flex-direction: row-reverse;
+      }
+
+      .not-reverse {
+        .MuiGrid-root {
+          flex-direction: row;
+        }
       }
     }
 
@@ -28,6 +58,19 @@
       @media (max-width:350px) {
         font-size: 26px;
       }
+    }
+
+    .select-option {
+      padding: 4px 16px;
+
+      &:hover {
+        background-color: #03438D;
+        color: #fff;
+      }
+    }
+
+    .hide {
+      display: none;
     }
   }
 }
